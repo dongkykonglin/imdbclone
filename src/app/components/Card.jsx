@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { RiThumbUpFill } from "react-icons/Ri";
+import { FiThumbsUp } from "react-icons/fi";
 
 export default function Card({ result }) {
   return (
@@ -29,7 +29,7 @@ export default function Card({ result }) {
           </h2>
           <p className="flex items-center">
             {result.release_date || result.first_air_date}
-            <RiThumbUpFill className="h-5 mr-1 ml-3" /> {result.vote_count}
+            <FiThumbsUp className="h-5 mr-1 ml-3" /> {result.vote_count}
           </p>
         </div>
       </Link>
